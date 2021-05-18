@@ -1,0 +1,54 @@
+/* Scroll bar styles */
+
+/* width */
+/* ::-webkit-scrollbar {
+    width: 10px;
+  } */
+  
+  /* Track */
+  /* ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #00000000; 
+    border-radius: 10px;
+  } */
+   
+  /* Handle */
+  /* ::-webkit-scrollbar-thumb {
+    background: #949494; 
+    border-radius: 10px;
+  } */
+  
+  /* Handle on hover */
+  /* ::-webkit-scrollbar-thumb:hover {
+    background: #b3b2b2; 
+  } */
+
+  
+/* Scroll bar styles */
+
+
+
+/* Custom Scroll bar styles for menuScroll START*/
+
+/* width */
+#menuScroll::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  #menuScroll::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #00000000; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  #menuScroll:hover::-webkit-scrollbar-thumb {
+    background: #bebcbc; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  #menuScroll::-webkit-scrollbar-thumb:hover {
+    background: #b3b2b2; 
+  }
+
+  /* Custom Scroll bar styles for menuScroll END*/

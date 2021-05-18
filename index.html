@@ -1,0 +1,1337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook by Sunny</title>
+    <link rel="stylesheet" href="./style.css" rel='stylesheet'>
+    <link rel="stylesheet" href="./tailwind/tailwind.css">
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="bg-gray-100 dark:bg-dark-main ">
+
+    <!-- NAV -->
+    <nav class="bg-white dark:bg-dark-second md:h-14 w-full shadow flex flex-col md:flex-row
+    itemes-center justify-center md:justify-between fixed top-0 z-50 border-b dark:border-dark-third">
+        <!-- LEFT NAV  -->
+        <div class="flex items-center justify-between w-full md:w-max px-2 py-0">
+
+            <a href="#" class=" hidden md:inline-block mr-2">
+                <img class="mx-4 my-4 w-20 mr-3 xl:w-20 sm:w-20  lg:w-10 h-auto"
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                    alt="facebook">
+
+                <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
+                    alt="facebook F logo" class="xl:w-24 sm:w-20  lg:w-10 h-auto"> -->
+            </a>
+
+            <a href="#" class="inline-block md:hidden">
+                <img src="./images/facebook-full-logo.svg" alt="facebook Full logo" class="w-32 h-auto">
+            </a>
+
+            <div class="flex items-center justify-between space-x-1 ml-4">
+
+                <div class="relative bg-gray-100 dark:bg-dark-third px-2 py-2 w-10 h-10 sm:w-11 sm:h-11
+                lg:h-11 lg:w-11 xl:w-max xl:pl-3 xl:pr-8 rounded-full flex items-center
+                justify-center cursor-pointer">
+                    <i class="bx bx-search-alt-2 text-x1 xl:mr-2 dark:text-dark-txt"></i>
+                    <input class="outline-none bg-transparent hidden xl:inline-block" type="text"
+                        placeholder="Search Facebook">
+                </div>
+
+                <div class="text-2xl grid place-items-center md:hidden bg-gray-100
+                dark:bg-dark-third rounded-full w-10 h-10 cursor-pointer hover:bg-gray-300 dark-text-dark-txt">
+                    <i class="bx bxl-messenger"></i>
+                </div>
+
+                <div id="dark-mode-toggle-mb" class="text-2xl grid place-items-center md:hidden bg-gray-100
+                dark:bg-dark-third rounded-full w-10 h-10 cursor-pointer hover:bg-gray-300 dark-text-dark-txt">
+                    <i class="bx bxs-moon"></i>
+                </div>
+
+
+
+            </div>
+
+            <!-- <div class="space-x-1 rounded-full flex bg-gray-100 py-2 px-2 lg:h-11 lg:w-64 justify-between
+             items-center dark:bg-dark-third sm:w-11 sm:h-11 xl:pl-3 xl:pr-8 cursor-pointer">
+                <img width="28" height="28" src="./images/search_black_24dp.svg">
+
+                <input type="text"
+                    class="hidden xl:inline-block bg-transparent w-full p-2 text-lg border-blue-500 placeholder-gray-500 focus:border-blue-500 outline-none"
+                    placeholder="Search Facebook" />
+            </div>
+
+            <div class="text-2xl grid place-items-center md:hidden bg-gray-200 dark:bg-dark-third
+            rounded-full w-10 h-10 cursor-pointer hover:bg-gray-300 dark-text-dark-txt">
+            <svg viewBox="0 0 28 28" alt=""  height="22" width="22">
+                <path
+                    d="M14 2.042c6.76 0 12 4.952 12 11.64S20.76 25.322 14 25.322a13.091 13.091 0 0 1-3.474-.461.956 .956 0 0 0-.641.047L7.5 25.959a.961.961 0 0 1-1.348-.849l-.065-2.134a.957.957 0 0 0-.322-.684A11.389 11.389 0 0 1 2 13.682C2 6.994 7.24 2.042 14 2.042ZM6.794 17.086a.57.57 0 0 0 .827.758l3.786-2.874a.722.722 0 0 1 .868 0l2.8 2.1a1.8 1.8 0 0 0 2.6-.481l3.525-5.592a.57.57 0 0 0-.827-.758l-3.786 2.874a.722.722 0 0 1-.868 0l-2.8-2.1a1.8 1.8 0 0 0-2.6.481Z">
+                </path>
+            </svg>
+        </div> -->
+
+
+            <!-- <div class="text-2xl grid place-items-center md:hidden bg-gray-200 dark:bg-dark-third
+        rounded-full w-10 h-10 cursor-pointer hover:bg-gray-300 dark-text-dark-txt">
+                <img width="28" height="28" src="./images/darkmode.svg"> -->
+
+
+        </div>
+
+        </div>
+        <!-- END LEFT NAV  -->
+
+        <!-- MAIN NAV  -->
+        <ul class="flex w-full lg:w-full items-center justify-center">
+            <li class="w-1/5 md:w-max text-center">
+                <a href="#" class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer
+                text-center inline-block text-blue-500 border-b-4 border-blue-500 ">
+                    <i class="bx bxs-home"></i>
+                </a>
+            </li>
+            <li class="w-1/5 md:w-max text-center">
+                <a href="#" class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer
+                text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third
+                dark:text-dark-txt relative">
+                    <i class="bx bx-movie-play"></i>
+                </a>
+            </li>
+            <li class="w-1/5 md:w-max text-center">
+                <a href="#" class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer
+                text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third
+                dark:text-dark-txt relative">
+                    <i class="bx bx-store"></i>
+                    <span class="text-xs rounded-full bg-red-500 text-white
+                    absolute top-1 xl:right-1/4  md:right-0.5  px-1 font-semibold text-center">5+</span>
+                </a>
+            </li>
+            <li class="w-1/5 md:w-max text-center">
+                <a href="#" class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer
+                text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third
+                dark:text-dark-txt relative">
+                    <i class="bx bx-group"></i>
+                </a>
+            </li>
+            <li class="w-1/5 md:w-max text-center hidden md:inline-block">
+                <a href="#" class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer
+                text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third
+                dark:text-dark-txt relative">
+                    <i class="bx bx-layout"></i>
+                </a>
+            </li>
+
+            <li class="w-1/5 md:w-max text-center inline-block md:hidden">
+                <a href="#" class="w-full text-3xl py-2 px-3 xl:px-12 cursor-pointer
+                text-center inline-block rounded text-gray-600 hover:bg-gray-100 dark:hover:bg-dark-third
+                dark:text-dark-txt relative">
+                    <i class="bx bx-menu"></i>
+                </a>
+            </li>
+
+
+        </ul>
+        <!-- END MAIN NAV  -->
+
+        <!-- RIGHT NAV  -->
+        <ul class="hidden w-full md:flex mx-4 items-center justify-center">
+            <li class=" hidden xl:flex ">
+                <a href="#" class="inline-flex items-center justify-center p-1 rounded-full
+                hover:bg-gray-200 dark:hover:bg-dark-third mx-1 ">
+                    <img class="rounded-full h-7 w-7"
+                        src="https://scontent-maa2-1.xx.fbcdn.net/v/t1.18169-1/cp0/p50x50/15356693_1195958013831911_7194779479856976846_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=7206a8&_nc_ohc=c-0cVa2FTSUAX8FkgM1&_nc_ht=scontent-maa2-1.xx&tp=27&oh=bee997a517458ad41db3a5399ce24efe&oe=60C2C84A" />
+                    <span class="mx-2 font-medium dark:text-dark-txt pr-3">Sundeep</h1>
+                </a>
+            </li>
+            <li>
+                <div class="text-xl hidden xl:grid place-items-center bg-gray-200 dark:bg-dark-third
+                dark:text-dark-txt rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300">
+                    <i class="bx bx-plus"> </i>
+                </div>
+            </li>
+
+            <li>
+                <div class="text-xl hidden xl:grid place-items-center bg-gray-200 dark:bg-dark-third
+                dark:text-dark-txt rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300">
+                    <i class="bx bxl-messenger"> </i>
+                </div>
+            </li>
+
+            <li>
+                <div class="text-xl grid place-items-center bg-gray-200 dark:bg-dark-third
+                dark:text-dark-txt rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300 relative">
+
+                    <i class="bx bxs-bell"> </i>
+
+                    <span class="text-xs rounded-full bg-red-500 text-white
+                     absolute top-0 right-0 px-1 font-semibold text-center">5</span>
+                </div>
+            </li>
+
+            <li>
+                <div id="dark-mode-toggle" class="text-xl grid place-items-center bg-gray-200 dark:bg-dark-third
+                dark:text-dark-txt rounded-full mx-1 p-3 cursor-pointer hover:bg-gray-300">
+                    <i class="bx bxs-moon"> </i>
+                </div>
+            </li>
+        </ul>
+        <!-- END RIGHT NAV  -->
+
+    </nav>
+    <!-- END NAV -->
+
+
+
+    <!-- MAIN SECTION  -->
+
+    <div class="flex justify-center h-screen ">
+
+        <!-- LEFT MENU  -->
+        <div id="menuScroll" class="w-72 mt-16 h-full hidden xl:flex flex-col fixed 
+        top-0 left-0 overflow-scroll pb-14">
+
+            <ul class="pt-4 pl-3 space-y-1">
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p2 hover:bg-gray-200
+                    rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third py-2">
+                        <img class="rounded-full h-8 w-8"
+                            src="https://scontent-maa2-1.xx.fbcdn.net/v/t1.18169-1/cp0/p50x50/15356693_1195958013831911_7194779479856976846_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=7206a8&_nc_ohc=c-0cVa2FTSUAX8FkgM1&_nc_ht=scontent-maa2-1.xx&tp=27&oh=bee997a517458ad41db3a5399ce24efe&oe=60C2C84A" />
+                        <span class="font-medium pl-2  text-base">Sundeep DS</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p2 hover:bg-gray-200
+                    rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third py-2">
+                        <img class="rounded-full h-8 w-8"
+                            src="https://static.xx.fbcdn.net/rsrc.php/v3/yx/r/5rR6LRpNc5u.png" />
+                        <span class="font-medium pl-2 text-base">COVID-19 Information Centre</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p2 hover:bg-gray-200
+                    rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third py-2">
+                        <img class="rounded-full h-8 w-8"
+                            src="https://static.xx.fbcdn.net/rsrc.php/v3/y8/r/S0U5ECzYUSu.png" />
+                        <span class="font-medium pl-2 text-base">Friends</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p2 hover:bg-gray-200
+                    rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third py-2">
+                        <img class="rounded-full h-8 w-8"
+                            src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/PrjLkDYpYbH.png" />
+                        <span class="font-medium pl-2 text-base">Groups</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p2 hover:bg-gray-200
+                    rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third py-2">
+                        <img class="rounded-full h-8 w-8"
+                            src="https://static.xx.fbcdn.net/rsrc.php/v3/yU/r/D2y-jJ2C_hO.png" />
+                        <span class="font-medium pl-2 text-base">Marketplace</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p2 hover:bg-gray-200
+                    rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third py-2">
+                        <img class="rounded-full h-8 w-8"
+                            src="https://static.xx.fbcdn.net/rsrc.php/v3/y5/r/duk32h44Y31.png" />
+                        <span class="font-medium pl-2 text-base">Watch</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p2 hover:bg-gray-200
+                    rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third py-2">
+                        <img class="rounded-full h-8 w-8"
+                            src="https://static.xx.fbcdn.net/rsrc.php/v3/ys/r/8wTx0Eu2vRq.png" />
+                        <span class="font-medium pl-2 text-base">Events</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p2 hover:bg-gray-200
+                    rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third py-2">
+                        <img class="rounded-full h-8 w-8"
+                            src="https://static.xx.fbcdn.net/rsrc.php/v3/y6/r/VPndBxotRgH.png" />
+                        <span class="font-medium pl-2 text-base">Memories</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p2 hover:bg-gray-200
+                    rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third py-2">
+
+                        <span class="h-8 w-8 rounded-full grid place-items-center bg-gray-300
+                    dark:bg-dark-second">
+                            <i class="bx bx-chevron-down">
+
+                            </i>
+                        </span>
+                        <span class="font-medium pl-2 text-base">See more</span>
+
+                    </a>
+                </li>
+                <li class="border-b border-gray-300 dark:border-dark-third pt-5"></li>
+            </ul>
+
+            <div class="flex justify-between items-center px-4 h-4 group mt-6">
+
+                <span class="font-semibold text-gray-500 text-lg dark:text-dark-txt">Your shortcuts</span>
+
+                <span class="text-blue-500 cursor-pointer hover:bg-gray-200
+                dark:hover:bg-dark-third p-2 rounded-md hidden group-hover:inline-block">Edit</span>
+
+            </div>
+
+            <ul class="pt-4 pl-3 ">
+
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p2 hover:bg-gray-200
+                    rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third py-2">
+                        <img class="rounded-full h-8 w-8" src="./images/got-group.jpg" />
+                        <span class="font-medium pl-2 text-base">Game of thrones</span>
+
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="flex items-center space-x-2 p2 hover:bg-gray-200
+                    rounded-lg transition-all dark:text-dark-txt dark:hover:bg-dark-third  py-2">
+
+                        <span class="h-8 w-8 rounded-full grid place-items-center bg-gray-300
+                    dark:bg-dark-second">
+                            <i class="bx bx-chevron-down">
+
+                            </i>
+                        </span>
+                        <span class="font-medium pl-2 text-base">See more</span>
+
+                    </a>
+                </li>
+            </ul>
+
+            <div class="mt-4 px-2 text-xs text-gray-500 dark:text-dark-txt">
+                <a href="#" class="hover:underline">Privacy</a>
+                <span>.</span>
+                <a href="#" class="hover:underline">Terms</a>
+                <span>.</span>
+                <a href="#" class="hover:underline">Advertising</a>
+                <span>.</span>
+                <a href="#" class="hover:underline">Cookies</a>
+                <span>.</span>
+                <a href="#" class="hover:underline">Ad choices</a>
+                <span>.</span>
+                <a href="#" class="hover:underline">More</a>
+                <span>.</span>
+                <span class="hover:underline cursor-pointer">Facebook © 2021</span>
+            </div>
+
+        </div>
+        <!-- LEFT MENU END  -->
+
+        <!-- NEWS FEED  -->
+        <div class="lg:w-3/6 w-full  pt-32 lg:pt-16 px-2  ">
+
+
+            <!-- STORY -->
+
+            <div class="relative flex space-x-4 mt-2 xl:mr-12 mr-4">
+
+
+                <!-- CREATE STORY  -->
+                <div class="w-24 h-48 flex-1 lg:w-28  lg:h-48 rounded-xl shadow overflow-hidden flex 
+                                    flex-col group cursor-pointer bg-white   dark:bg-dark-second">
+                    <div class="h-3/4 lg:h-4/6 overflow-hidden bg-gray-300 ">
+                        <img src="https://scontent.fmaa1-1.fna.fbcdn.net/v/t1.18169-1/p160x160/15356693_1195958013831911_7194779479856976846_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=7206a8&_nc_ohc=c-0cVa2FTSUAX-gtTo4&_nc_ht=scontent.fmaa1-1.fna&tp=6&oh=0fd639b4eefaf2e2bc962467a6091e5f&oe=60C66609"
+                            alt="profile picture" class="group-hover:transform group-hover:scale-105 transition-all duration-500
+                                            h-full w-full object-cover">
+                    </div>
+
+                    <div class="relative flex flex-1 pb-2 justify-center  items-end text-center">
+
+                        <span class="text-sm md:text-sm lg:text:base font-semibold 
+                                           dark:text-dark-txt">Create<br
+                                class="hidden md:inline-block">
+                            story</span>
+
+                        <div class="bg-blue-500 text-white w-8 h-8 lg:w-10 lg:h-10 rounded-full flex text-2xl
+                                            items-center -top-1/3 absolute left-1/3
+                                            border-4 border-white 
+                                            justify-center dark:border-dark-second">
+                            <i class="bx bx-plus"></i>
+                        </div>
+
+                    </div>
+
+                </div>
+                <!-- END CREATE STORY  -->
+
+                <!-- OTHER STORIES -->
+                <div class="w-24 h-auto flex-1  lg:w-28  lg:h-48 rounded-xl shadow overflow-hidden flex 
+                                flex-col group cursor-pointer bg-white">
+
+                    <div class="w-full h-full relative flex">
+
+                        <!-- STORY PICTURE -->
+                        <img src="./images/Story/messi-story.jpg" alt="profile picture" class=" transform hover:scale-105   duration-500
+                                        h-full w-full object-cover ">
+                        <!-- END STORY PICTURE -->
+
+                        <!-- PROFILE PICTURE -->
+                        <div class="dark:border-dark-second absolute w-10 h-10 top-0 left-0 m-3 ">
+                            <img src="./images/contacts/messi.jpg" alt="profile picture" class="  transition-all duration-500
+                                            h-full w-full object-cover  rounded-full border-4 border-blue-500">
+                        </div>
+                        <!-- END PROFILE PICTURE -->
+
+                        <!-- PROFILE NAME  -->
+                        <span class="text-sm md:text-sm lg:text-base font-semibold 
+                                         
+                                        absolute bottom-0 left-0 text-white mx-2 my-2">Lionel Messi</span>
+
+                        <!-- END PROFILE NAME  -->
+
+                    </div>
+
+                </div>
+                <div class="w-24 h-auto flex-1  lg:w-28  lg:h-48 rounded-xl shadow overflow-hidden flex 
+                                    flex-col group cursor-pointer bg-white">
+                    <div class="w-full h-full relative flex">
+
+                        <!-- STORY PICTURE -->
+                        <img src="./images/Story/ronaldo-story.jpg" alt="profile picture" class=" transform hover:scale-105   duration-500
+                                            h-full w-full object-cover ">
+                        <!-- END STORY PICTURE -->
+
+                        <!-- PROFILE PICTURE -->
+                        <div class="dark:border-dark-second absolute w-10 h-10 top-0 left-0 m-3 ">
+                            <img src="./images/contacts/ronaldo.png" alt="profile picture" class="  transition-all duration-500
+                                                h-full w-full object-cover  rounded-full border-4 border-blue-500">
+                        </div>
+                        <!-- END PROFILE PICTURE -->
+
+                        <!-- PROFILE NAME  -->
+                        <span class="text-sm md:text-sm lg:text-base font-semibold 
+                                               
+                                            absolute bottom-0 left-0 text-white mx-2 my-2">Cristiano Ronaldo</span>
+
+                        <!-- END PROFILE NAME  -->
+
+                    </div>
+                </div>
+                <div class="w-24 h-auto flex-1  lg:w-28  lg:h-48 rounded-xl shadow overflow-hidden flex 
+                                    flex-col group cursor-pointer bg-white">
+                    <div class="w-full h-full relative flex">
+
+                        <!-- STORY PICTURE -->
+                        <img src="./images/Story/kylie-jenner-story.jpg" alt="profile picture" class=" transform hover:scale-105   duration-500
+                                            h-full w-full object-cover ">
+                        <!-- END STORY PICTURE -->
+
+                        <!-- PROFILE PICTURE -->
+                        <div class="dark:border-dark-second absolute w-10 h-10 top-0 left-0 m-3 ">
+                            <img src="./images/contacts/kylie.png" alt="profile picture" class="  transition-all duration-500
+                                                h-full w-full object-cover  rounded-full border-4 border-blue-500">
+                        </div>
+                        <!-- END PROFILE PICTURE -->
+
+                        <!-- PROFILE NAME  -->
+                        <span class="text-sm md:text-sm lg:text-base font-semibold 
+                                             
+                                            absolute bottom-0 left-0 text-white mx-2 my-2">Kylie Jenner</span>
+
+                        <!-- END PROFILE NAME  -->
+
+                    </div>
+                </div>
+                <div class="w-24 h-auto flex-1  lg:w-28  lg:h-48 rounded-xl shadow overflow-hidden flex 
+                                    flex-col group cursor-pointer bg-white hidden md:inline-block">
+                    <div class="w-full h-full relative flex">
+
+                        <!-- STORY PICTURE -->
+                        <img src="./images/Story/kanye-west-story.jpg" alt="profile picture" class=" transform hover:scale-105   duration-500
+                                            h-full w-full object-cover ">
+                        <!-- END STORY PICTURE -->
+
+                        <!-- PROFILE PICTURE -->
+                        <div class="dark:border-dark-second absolute w-10 h-10 top-0 left-0 m-3 ">
+                            <img src="./images/contacts/knye-west.jpg" alt="profile picture" class="  transition-all duration-500
+                                                h-full w-full object-cover  rounded-full border-4 border-blue-500">
+                        </div>
+                        <!-- END PROFILE PICTURE -->
+
+                        <!-- PROFILE NAME  -->
+                        <span class="text-sm md:text-sm lg:text-base font-semibold 
+                                              
+                                            absolute bottom-0 left-0 text-white mx-2 my-2">Kanye West</span>
+
+                        <!-- END PROFILE NAME  -->
+
+                    </div>
+                </div>
+
+
+                <div
+                    class="bg-white w-9 h-9 lg:w-12 lg:h-12 rounded-full flex text-2xl
+                                items-center  absolute  lg:-right-6 lg:top-1/3 -right-3 top-20
+                                border-gray-200 border-2  
+                                justify-center dark:bg-dark-third dark:border-dark-third dark:text-dark-txt cursor-pointer hover:bg-gray-200 shadow">
+                    <i class="bx bx-right-arrow-alt"></i>
+                </div>
+
+                <!-- END OTHER STORIES -->
+
+            </div>
+
+            <!-- END STORY -->
+
+
+            <!-- NEW POST FORM  -->
+
+            <div class="flex-col bg-white rounded-b-lg shadow  items-center justify-center
+                     xl:mr-20 xl:mr-4 xl:ml-8 mt-6 pt-2 px-4 md:py-4 mx-1 pt-4 pb-2 dark:bg-dark-second">
+
+                <div class="flex dark:border-dark-third">
+
+                    <img class="rounded-full h-10 w-10 dark:text-dark-txt"
+                        src="https://scontent-maa2-1.xx.fbcdn.net/v/t1.18169-1/cp0/p50x50/15356693_1195958013831911_7194779479856976846_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=7206a8&_nc_ohc=c-0cVa2FTSUAX8FkgM1&_nc_ht=scontent-maa2-1.xx&tp=27&oh=bee997a517458ad41db3a5399ce24efe&oe=60C2C84A" />
+
+                    <input type="text" class="w-full bg-gray-100 rounded-full h-10 px-4 text-base md:text-lg
+                            outline-none hover:bg-gray-200 cursor-pointer ml-4 dark:bg-dark-third dark:text-dark-txt"
+                        placeholder="What's on your mind, Sundeep?">
+
+                </div>
+
+                <div class="bg-gray-200 dark:bg-dark-third  h-0.5 mx-2 mt-3 mb-3"></div>
+
+
+                <div class="flex justify-self-auto items-center space-x-1 md:space-x-2 h-10 dark:text-dark-txt">
+
+                    <div class=" flex justify-center items-center space-x-2 hover:bg-gray-100 dark:hover:bg-dark-third w-full h-full
+                            rounded-md cursor-pointer px-1 md:px-3 dark:hover:bg-dark-third">
+                        <i class='bx bxs-video-plus text-3xl text-red-500'></i>
+                        <span class="text-base md:text-base font-semibold mt-0.5 text-gray-500 w-full
+                                dark:text-dark-txt">Live video</span>
+                    </div>
+
+                    <div class="flex justify-center items-center space-x-2 hover:bg-gray-100 dark:hover:bg-dark-third w-full h-full
+                            rounded-md cursor-pointer px-1 md:px-3  ">
+                        <i class='bx bx-photo-album text-3xl text-red-500'></i>
+                        <span
+                            class="text-base md:text-base font-semibold mt-0.5 text-gray-500 w-full">Photo/Video</span>
+                    </div>
+
+                    <div class="flex justify-center items-center space-x-2 hover:bg-gray-100 dark:hover:bg-dark-third w-full h-full
+                            rounded-md cursor-pointer px-1 md:px-3 ">
+                        <i class='bx bx-wink-smile text-3xl text-yellow-400'></i>
+                        <span
+                            class="text-base md:text-base font-semibold mt-0.5 text-gray-500 w-full">Feeling/Activity</span>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- NEW POST FORM  -->
+
+            <!-- POST 1  -->
+
+            <div class="flex-col rounded-lg shadow   
+                        xl:mr-20 xl:mr-4 xl:ml-8 mt-6 pt-2 bg-white  md:py-4 mx-1 pt-4 pb-2 dark:bg-dark-second">
+
+                <!-- AUTHOR SECTION-->
+
+                <div class="flex flex-1 relative items-center px-4">
+                    <img class="rounded-full w-12 h-12" src="./images/contacts/ronaldo.png"
+                        alt="Author profile picture">
+
+                    <div class="flex-col items-center ml-2">
+                        <Span class="text-base md:text-base font-semibold 
+                                    dark:text-dark-txt">
+                            Cristiano Ronaldo
+                        </Span>
+                        <div class="flex items-center">
+                            <span class="text-xs md:text-sm text-gray-500 
+                                        dark:text-dark-txt">
+                                19h
+                            </span>
+                            <i class='bx bx-world ml-1 text-gray-500'></i>
+                        </div>
+                    </div>
+
+                    <div class="flex right-4 absolute rounded-full hover:bg-gray-300 dark:hover:bg-dark-third">
+                        <i class='bx bx-dots-horizontal-rounded text-2xl text-gray-500 p-1.5'></i>
+                    </div>
+
+                </div>
+
+                <!-- END AUTHOR SECTION -->
+
+                <!-- POST CAPTION  -->
+
+                <span class="flex m-4 dark:text-dark-txt">
+                    Don’t stop here! 😉👊🏽
+                </span>
+                <!-- END POST CAPTION  -->
+
+
+                <!-- POST PHOTO/VIDEO  -->
+
+                <img src="./images/posts/ronaldo-post.jpg" alt="post">
+
+                <!-- END POST PHOTO/VIDEO  -->
+
+
+                <!-- LIKES & COMMENTS COUNT  -->
+                <div class="flex m-3 relative">
+
+                    <div class="flex relative">
+                        <div class="h-6 w-6 absolute z-10 bg-white rounded-full dark:bg-gray-300">
+                            <img class="p-0.5" src="./images/Icons/heart.svg" alt="">
+                        </div>
+
+                        <div class="h-6 w-6 absolute z-0 left-5 bg-white rounded-full dark:bg-gray-300">
+                            <img class="p-0.5" src="./images/Icons/like.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class=" ml-12 text-gray-500">
+                        5.4m
+                    </div>
+
+                    <div class="right-0 absolute text-gray-500 space-x-2 text-base">
+                        <span>
+                            550k comments
+                        </span>
+                        <span>
+                            8k shares
+                        </span>
+                    </div>
+
+                </div>
+                <!-- END LIKES & COMMENTS COUNT  -->
+
+
+                <!-- LIKE SHARE COMENT BUTTONS -->
+
+                <div class="flex mx-4 border-t  border-b dark:border-dark-third border-gray-300 py-2 h-12">
+
+                    <div class="flex justify-center w-full items-center rounded-md hover:bg-gray-200
+                     cursor-pointer dark:hover:bg-dark-third">
+                        <i class='bx bx-like text-xl text-gray-500'></i>
+                        <span class="text-gray-500 font-medium ml-2">
+                            Like
+                        </span>
+                    </div>
+
+                    <div class="flex justify-center w-full items-center rounded-md hover:bg-gray-200
+                     cursor-pointer dark:hover:bg-dark-third">
+                        <i class='bx bx-comment text-xl text-gray-500'></i>
+                        <span class="text-gray-500 font-medium ml-2">
+                            Comment
+                        </span>
+                    </div>
+
+                    <div class="flex justify-center w-full items-center rounded-md hover:bg-gray-200 
+                    cursor-pointer dark:hover:bg-dark-third">
+                        <i class='bx bx-share bx-flip-horizontal text-xl  text-gray-500'></i>
+                        <span class="text-gray-500 font-medium ml-2">
+                            Share
+                        </span>
+                    </div>
+
+                </div>
+                <!-- END LIKE SHARE COMENT BUTTONS -->
+
+                <!-- ADD COMMENT -->
+                <div class="flex mx-4 mt-4 mb-1.5 xl:mb-0">
+
+                    <div class="w-auto px-2 relative">
+                        <img class="rounded-full h-8 w-8"
+                            src="https://scontent-maa2-1.xx.fbcdn.net/v/t1.18169-1/cp0/p50x50/15356693_1195958013831911_7194779479856976846_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=7206a8&_nc_ohc=c-0cVa2FTSUAX8FkgM1&_nc_ht=scontent-maa2-1.xx&tp=27&oh=bee997a517458ad41db3a5399ce24efe&oe=60C2C84A" />
+
+                        <span
+                            class="w-3 h-3 bg-red-500 absolute border-white dark:border-gray-400 border-2 rounded-full right-0.5 bottom-0.5"></span>
+
+                    </div>
+
+                    <div class="flex  relative items-center w-full rounded-full bg-gray-200 dark:bg-dark-third">
+
+                        <input type="text" class="bg-gray-200 rounded-full outline-none mx-2 w-5/6 h-9 px-2 dark:bg-dark-third dark:text-dark-txt"
+                            placeholder="Write a public comment...">
+
+
+                        <div class="flex w-auto right-0 absolute  mr-2 items-center justify-center -space-x-0 ">
+
+                            <div class="flex hover:bg-gray-300 dark:hover:bg-dark-second rounded-full text-xl text-gray-500">
+                                <i class='bx bx-smile bx-flip-horizontal p-1.5'></i>
+                            </div>
+
+                            <div class="flex hover:bg-gray-300 dark:hover:bg-dark-second rounded-full text-xl text-gray-500  ">
+                                <i class='bx bx-camera  p-1.5  '></i>
+                            </div>
+
+                            <div class="flex hover:bg-gray-300 dark:hover:bg-dark-second rounded-full text-xl text-gray-500">
+                                <i class='bx bxs-file-gif p-1.5'></i>
+                            </div>
+
+                            <div class="flex hover:bg-gray-300 dark:hover:bg-dark-second rounded-full text-xl text-gray-500">
+                                <i class='bx bx-sticker p-1.5'></i>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--END ADD COMMENT -->
+
+
+
+
+            </div>
+            <!-- END POST 1 -->
+
+
+            <!-- POST 2 -->
+
+            <div class="flex-col rounded-lg shadow   
+            xl:mr-20 xl:mr-4 xl:ml-8 mt-6 pt-2 bg-white  md:py-4 mx-1 pt-4 pb-2 dark:bg-dark-second">
+
+                <!-- AUTHOR SECTION-->
+
+                <div class="flex flex-1 relative items-center px-4">
+                    <img class="rounded-full w-12 h-12" src="./images/contacts/kylie.png" alt="Author profile picture">
+
+                    <div class="flex-col items-center ml-2">
+                        <Span class="text-base md:text-base font-semibold 
+                        dark:text-dark-txt">
+                            Kylie Jenner
+                        </Span>
+                        <div class="flex items-center">
+                            <span class="text-xs md:text-sm text-gray-500 
+                            dark:text-dark-txt">
+                                2h
+                            </span>
+                            <i class='bx bx-world ml-1 text-gray-500'></i>
+                        </div>
+                    </div>
+
+                    <div class="flex right-4 absolute rounded-full hover:bg-gray-300 dark:hover:bg-dark-third">
+                        <i class='bx bx-dots-horizontal-rounded text-2xl text-gray-500 p-1.5'></i>
+                    </div>
+
+                </div>
+
+                <!-- END AUTHOR SECTION -->
+
+                <!-- POST CAPTION  -->
+
+                <span class="flex m-4 dark:text-dark-txt">
+                    Besties FO
+                </span>
+                <!-- END POST CAPTION  -->
+
+
+                <!-- POST PHOTO/VIDEO  -->
+
+                <img src="./images/posts/kylie-post.jpg" alt="post">
+
+                <!-- END POST PHOTO/VIDEO  -->
+
+
+                <!-- LIKES & COMMENTS COUNT  -->
+                <div class="flex m-3 relative">
+
+                    <div class="flex relative">
+                        <div class="h-6 w-6 absolute z-10 bg-white rounded-full dark:bg-gray-300">
+                            <img class="p-0.5" src="./images/Icons/heart.svg" alt="">
+                        </div>
+
+                        <div class="h-6 w-6 absolute z-0 left-5 bg-white rounded-full dark:bg-gray-300">
+                            <img class="p-0.5" src="./images/Icons/like.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class=" ml-12 text-gray-500">
+                        10.5m
+                    </div>
+
+                    <div class="right-0 absolute text-gray-500 space-x-2 text-base">
+                        <span>
+                            910k comments
+                        </span>
+                        <span>
+                            20k shares
+                        </span>
+                    </div>
+
+                </div>
+                <!-- END LIKES & COMMENTS COUNT  -->
+
+
+                <!-- LIKE SHARE COMENT BUTTONS -->
+
+                <div class="flex mx-4 border-t  border-b  dark:border-dark-third border-gray-300 py-2 h-12">
+
+                    <div class="flex justify-center w-full items-center rounded-md hover:bg-gray-200
+                     cursor-pointer dark:hover:bg-dark-third">
+                        <i class='bx bx-like text-xl text-gray-500'></i>
+                        <span class="text-gray-500 font-medium ml-2">
+                            Like
+                        </span>
+                    </div>
+
+                    <div class="flex justify-center w-full items-center rounded-md hover:bg-gray-200
+                     cursor-pointer dark:hover:bg-dark-third">
+                        <i class='bx bx-comment text-xl text-gray-500'></i>
+                        <span class="text-gray-500 font-medium ml-2">
+                            Comment
+                        </span>
+                    </div>
+
+                    <div class="flex justify-center w-full items-center rounded-md hover:bg-gray-200 
+                    cursor-pointer dark:hover:bg-dark-third">
+                        <i class='bx bx-share bx-flip-horizontal text-xl  text-gray-500'></i>
+                        <span class="text-gray-500 font-medium ml-2">
+                            Share
+                        </span>
+                    </div>
+
+                </div>
+                <!-- END LIKE SHARE COMENT BUTTONS -->
+
+                <!-- ADD COMMENT -->
+                <div class="flex mx-4 mt-4 mb-1.5 xl:mb-0">
+
+                    <div class="w-auto px-2 relative">
+                        <img class="rounded-full h-8 w-8"
+                            src="https://scontent-maa2-1.xx.fbcdn.net/v/t1.18169-1/cp0/p50x50/15356693_1195958013831911_7194779479856976846_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=7206a8&_nc_ohc=c-0cVa2FTSUAX8FkgM1&_nc_ht=scontent-maa2-1.xx&tp=27&oh=bee997a517458ad41db3a5399ce24efe&oe=60C2C84A" />
+
+                        <span
+                            class="w-3 h-3 bg-red-500 absolute border-white dark:border-gray-400 border-2 rounded-full right-0.5 bottom-0.5"></span>
+
+                    </div>
+
+                    <div class="flex  relative items-center w-full rounded-full bg-gray-200 dark:bg-dark-third ">
+
+                        <input type="text" class="bg-gray-200 rounded-full outline-none mx-2 w-5/6 h-9 px-2 dark:bg-dark-third dark:text-dark-txt"
+                            placeholder="Write a public comment...">
+
+
+                        <div class="flex w-auto right-0 absolute  mr-2 items-center justify-center -space-x-0 ">
+
+                            <div class="flex hover:bg-gray-300 dark:hover:bg-dark-second rounded-full text-xl text-gray-500">
+                                <i class='bx bx-smile bx-flip-horizontal p-1.5'></i>
+                            </div>
+
+                            <div class="flex hover:bg-gray-300 dark:hover:bg-dark-second rounded-full text-xl text-gray-500  ">
+                                <i class='bx bx-camera  p-1.5  '></i>
+                            </div>
+
+                            <div class="flex hover:bg-gray-300 dark:hover:bg-dark-second rounded-full text-xl text-gray-500">
+                                <i class='bx bxs-file-gif p-1.5'></i>
+                            </div>
+
+                            <div class="flex hover:bg-gray-300 dark:hover:bg-dark-second rounded-full text-xl text-gray-500">
+                                <i class='bx bx-sticker p-1.5'></i>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--END ADD COMMENT -->
+
+
+
+
+            </div>
+            <!-- END POST 2  -->
+
+            <!-- POST 3 -->
+
+            <div class=" flex-col rounded-lg shadow   
+             xl:mr-20 xl:mr-4 xl:ml-8 mt-6 pt-2 bg-white  md:py-4 mx-1 pt-4 pb-2 dark:bg-dark-second">
+
+                <!-- AUTHOR SECTION-->
+
+                <div class="flex flex-1 relative items-center px-4">
+                    <img class="rounded-full w-12 h-12" src="./images/contacts/messi.jpg" alt="Author profile picture">
+
+                    <div class="flex-col items-center ml-2">
+                        <Span class="text-base md:text-base font-semibold 
+                         dark:text-dark-txt">
+                            Lionel Messi
+                        </Span>
+                        <div class="flex items-center">
+                            <span class="text-xs md:text-sm text-gray-500 
+                             dark:text-dark-txt">
+                                19m
+                            </span>
+                            <i class='bx bx-world ml-1 text-gray-500'></i>
+                        </div>
+                    </div>
+
+                    <div class="flex right-4 absolute rounded-full hover:bg-gray-300 dark:hover:bg-dark-third">
+                        <i class='bx bx-dots-horizontal-rounded text-2xl text-gray-500 p-1.5'></i>
+                    </div>
+
+                </div>
+
+                <!-- END AUTHOR SECTION -->
+
+                <!-- POST CAPTION  -->
+
+                <span class="flex m-4 dark:text-dark-txt">
+                    Hello everyone! To celebrate the launch of the official @fcbarcelona memorabilia collection, I’m
+                    giving away five signed and framed FC Barcelona shirts here
+                </span>
+                <!-- END POST CAPTION  -->
+
+
+                <!-- POST PHOTO/VIDEO  -->
+
+                <img src="./images/posts/messi-post.jpg" alt="post">
+
+                <!-- END POST PHOTO/VIDEO  -->
+
+
+                <!-- LIKES & COMMENTS COUNT  -->
+                <div class="flex m-3 relative">
+
+                    <div class="flex relative">
+                        <div class="h-6 w-6 absolute z-10 bg-white rounded-full dark:bg-gray-300">
+                            <img class="p-0.5" src="./images/Icons/heart.svg" alt="">
+                        </div>
+
+                        <div class="h-6 w-6 absolute z-0 left-5 bg-white rounded-full dark:bg-gray-300">
+                            <img class="p-0.5" src="./images/Icons/like.svg" alt="">
+                        </div>
+                    </div>
+
+
+                    <div class=" ml-12 text-gray-500">
+                        7.4m
+                    </div>
+
+                    <div class="right-0 absolute text-gray-500 space-x-2 text-base">
+                        <span>
+                            450k comments
+                        </span>
+                        <span>
+                            80k shares
+                        </span>
+                    </div>
+
+                </div>
+                <!-- END LIKES & COMMENTS COUNT  -->
+
+
+                <!-- LIKE SHARE COMENT BUTTONS -->
+
+                <div class="flex mx-4 border-t  border-b dark:border-dark-third border-gray-300 py-2 h-12">
+
+                    <div class="flex justify-center w-full items-center rounded-md hover:bg-gray-200 
+                    cursor-pointer dark:hover:bg-dark-third">
+                        <i class='bx bx-like text-xl text-gray-500'></i>
+                        <span class="text-gray-500 font-medium ml-2">
+                            Like
+                        </span>
+                    </div>
+
+                    <div class="flex justify-center w-full items-center rounded-md hover:bg-gray-200 
+                    cursor-pointer dark:hover:bg-dark-third">
+                        <i class='bx bx-comment text-xl text-gray-500'></i>
+                        <span class="text-gray-500 font-medium ml-2">
+                            Comment
+                        </span>
+                    </div>
+
+                    <div class="flex justify-center w-full items-center rounded-md hover:bg-gray-200
+                     cursor-pointer dark:hover:bg-dark-third">
+                        <i class='bx bx-share bx-flip-horizontal text-xl  text-gray-500'></i>
+                        <span class="text-gray-500 font-medium ml-2">
+                            Share
+                        </span>
+                    </div>
+
+                </div>
+                <!-- END LIKE SHARE COMENT BUTTONS -->
+
+                <!-- ADD COMMENT -->
+                <div class="flex mx-4 mt-4 mb-1.5 xl:mb-0">
+
+                    <div class="w-auto px-2 relative">
+                        <img class="rounded-full h-8 w-8"
+                            src="https://scontent-maa2-1.xx.fbcdn.net/v/t1.18169-1/cp0/p50x50/15356693_1195958013831911_7194779479856976846_n.jpg?_nc_cat=111&ccb=1-3&_nc_sid=7206a8&_nc_ohc=c-0cVa2FTSUAX8FkgM1&_nc_ht=scontent-maa2-1.xx&tp=27&oh=bee997a517458ad41db3a5399ce24efe&oe=60C2C84A" />
+
+                        <span
+                            class="w-3 h-3 bg-red-500 absolute border-white dark:border-gray-400 border-2 rounded-full right-0.5 bottom-0.5"></span>
+
+                    </div>
+
+                    <div class="flex  relative items-center w-full rounded-full bg-gray-200 dark:bg-dark-third ">
+
+                        <input type="text" class="bg-gray-200 rounded-full outline-none mx-2 w-5/6 h-9 px-2 dark:bg-dark-third dark:text-dark-txt"
+                            placeholder="Write a public comment...">
+
+
+                        <div class="flex w-auto right-0 absolute  mr-2 items-center justify-center -space-x-0 ">
+
+                            <div class="flex hover:bg-gray-300 dark:hover:bg-dark-second rounded-full text-xl text-gray-500">
+                                <i class='bx bx-smile bx-flip-horizontal p-1.5'></i>
+                            </div>
+
+                            <div class="flex hover:bg-gray-300 dark:hover:bg-dark-second rounded-full text-xl text-gray-500  ">
+                                <i class='bx bx-camera  p-1.5  '></i>
+                            </div>
+
+                            <div class="flex hover:bg-gray-300 dark:hover:bg-dark-second rounded-full text-xl text-gray-500">
+                                <i class='bx bxs-file-gif p-1.5'></i>
+                            </div>
+
+                            <div class="flex hover:bg-gray-300 dark:hover:bg-dark-second rounded-full text-xl text-gray-500">
+                                <i class='bx bx-sticker p-1.5'></i>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--END ADD COMMENT -->
+
+
+
+
+            </div>
+            <!-- END POST 3  -->
+
+
+
+        </div>
+        <!-- NEWS FEED  END-->
+
+        <!-- RIGHT MENU  -->
+        <div id=" menuScroll" class="w-1/4 mt-16 h-full hidden xl:block px-4 fixed top-0 
+        right-0 overflow-y-scroll">
+
+            <div class="h-full">
+                <div class="flex justify-between items-center px-4 pt-4">
+
+                    <span class="font-semibold text-gray-500 text-lg dark:text-dark-txt">
+                        Friend requests</span>
+
+                    <span class="text-blue-500 cursor-pointer hover:bg-gray-200
+                    dark:hover:bg-dark-third p-2 rounded-md">See all</span>
+
+                </div>
+
+                <div class="p-2">
+                    <a href="#" class="flex items-center space-x-4 p-2 hover:bg-gray-200
+                    dark:hover:bg-dark-third rounded-lg transition-all cursor-default">
+                        <img  src="https://img-cdn.inc.com/image/upload/w_1920,h_1080,c_fill/images/panoramic/GettyImages-1148265369_460130_nuvmwr.jpg" 
+                        alt="profile picture" class="w-12 h-12 rounded-full object-cover">
+                        <div class="flex-1 h-full">
+                            <div class="dark:text-dark-txt justify-center">
+                                <span class="font-semibold text-base">Mark zuckerberg</span>
+                                <span class="float-right text-xs text-center">6d</span>
+                            </div>
+                            <div class="flex space-x-2 mt-2">
+                                <div class="w-1/2 bg-blue-500 cursor-pointer py-1 text-center
+                                font-normal text-white rounded-lg text-base">
+                                    Confirm
+                                </div>
+                                <div class="w-1/2 bg-gray-300 cursor-pointer py-1 text-center
+                                font-normal rounded-lg text-base dark:bg-dark-third dark:text-dark-txt">
+                                    Delete
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="border-b border-gray-300 dark:border-dark-third mt-4"> </div>
+
+                <!-- ONLINE CONTACTS -->
+                <div class="flex justify-between items-center px-4 pt-4 text-gray-500 
+                dark:text-dark-txt">
+                    <span class="font-semibold text-gray-500 text-lg dark:text-dark-txt">
+                        Contacts</span>
+
+                    <div class="flex space-x-1">
+                        <div class="w-8 h-8 grid place-items-center text-xl hover:bg-gray-200
+                            dark:hover:bg-dark-third rounded-full cursor-pointer">
+                            <i class="bx bx-search-alt-2"></i>
+                        </div>
+                        <div class="w-8 h-8 grid place-items-center text-xl hover:bg-gray-200
+                            dark:hover:bg-dark-third rounded-full cursor-pointer">
+                            <i class="bx bx-dots-horizontal-rounded"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="p-2  pb-20">
+                    <li>
+                        <div class=" flex items-center space-x-4 p-2 hover:bg-gray-200
+                        dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/contacts/kylie.png" alt="Friends profile picture"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="rounded-full absolute right-0 bg-red-500 h-3 w-3 top-3/4 
+                                border-white dark:border-gray-400 border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-base">Kylie Jenner</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=" flex items-center space-x-4 p-2 hover:bg-gray-200
+                        dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/contacts/knye-west.jpg" alt="Friends profile picture"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="rounded-full absolute right-0 bg-red-500 h-3 w-3 top-3/4 
+                                border-white dark:border-gray-400 border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-base">Kanye West</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=" flex items-center space-x-4 p-2 hover:bg-gray-200
+                        dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/contacts/roger.png" alt="Friends profile picture"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="rounded-full absolute right-0 bg-red-500 h-3 w-3 top-3/4 
+                                border-white dark:border-gray-400 border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-base">Roger Federer</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=" flex items-center space-x-4 p-2 hover:bg-gray-200
+                        dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/contacts/ronaldo.png" alt="Friends profile picture"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="rounded-full absolute right-0 bg-red-500 h-3 w-3 top-3/4 
+                                border-white dark:border-gray-400 border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-base">Cristiano Ronaldo</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=" flex items-center space-x-4 p-2 hover:bg-gray-200
+                        dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/contacts/messi.jpg" alt="Friends profile picture"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="rounded-full absolute right-0 bg-red-500 h-3 w-3 top-3/4 
+                                border-white dark:border-gray-400 border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-base">Lionel Messi</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=" flex items-center space-x-4 p-2 hover:bg-gray-200
+                        dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/contacts/kylie.png" alt="Friends profile picture"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="rounded-full absolute right-0 bg-red-500 h-3 w-3 top-3/4 
+                                border-white dark:border-gray-400 border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-base">Kylie Jenner</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=" flex items-center space-x-4 p-2 hover:bg-gray-200
+                        dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/contacts/knye-west.jpg" alt="Friends profile picture"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="rounded-full absolute right-0 bg-red-500 h-3 w-3 top-3/4 
+                                border-white dark:border-gray-400 border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-base">Kanye West</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=" flex items-center space-x-4 p-2 hover:bg-gray-200
+                        dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/contacts/roger.png" alt="Friends profile picture"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="rounded-full absolute right-0 bg-red-500 h-3 w-3 top-3/4 
+                                border-white dark:border-gray-400 border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-base">Roger Federer</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=" flex items-center space-x-4 p-2 hover:bg-gray-200
+                        dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/contacts/ronaldo.png" alt="Friends profile picture"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="rounded-full absolute right-0 bg-red-500 h-3 w-3 top-3/4 
+                                border-white dark:border-gray-400 border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-base">Cristiano Ronaldo</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=" flex items-center space-x-4 p-2 hover:bg-gray-200
+                        dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/contacts/messi.jpg" alt="Friends profile picture"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="rounded-full absolute right-0 bg-red-500 h-3 w-3 top-3/4 
+                                border-white dark:border-gray-400 border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-base">Lionel Messi</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=" flex items-center space-x-4 p-2 hover:bg-gray-200
+                        dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/contacts/ronaldo.png" alt="Friends profile picture"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="rounded-full absolute right-0 bg-red-500 h-3 w-3 top-3/4 
+                                border-white dark:border-gray-400 border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-base">Cristiano Ronaldo</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=" flex items-center space-x-4 p-2 hover:bg-gray-200
+                        dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/contacts/messi.jpg" alt="Friends profile picture"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="rounded-full absolute right-0 bg-red-500 h-3 w-3 top-3/4 
+                                border-white dark:border-gray-400 border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-base">Lionel Messi</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=" flex items-center space-x-4 p-2 hover:bg-gray-200
+                        dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/contacts/kylie.png" alt="Friends profile picture"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="rounded-full absolute right-0 bg-red-500 h-3 w-3 top-3/4 
+                                border-white dark:border-gray-400 border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-base">Kylie Jenner</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=" flex items-center space-x-4 p-2 hover:bg-gray-200
+                        dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/contacts/knye-west.jpg" alt="Friends profile picture"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="rounded-full absolute right-0 bg-red-500 h-3 w-3 top-3/4 
+                                border-white dark:border-gray-400 border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-base">Kanye West</span>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class=" flex items-center space-x-4 p-2 hover:bg-gray-200
+                        dark:hover:bg-dark-third dark:text-dark-txt rounded-lg cursor-pointer">
+                            <div class="relative">
+                                <img src="./images/contacts/roger.png" alt="Friends profile picture"
+                                    class="w-8 h-8 rounded-full">
+                                <span class="rounded-full absolute right-0 bg-red-500 h-3 w-3 top-3/4 
+                                border-white dark:border-gray-400 border-2"></span>
+                            </div>
+                            <div>
+                                <span class="font-semibold text-base">Roger Federer</span>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+
+                </ul>
+
+                <!-- END ONLINE CONTACTS -->
+
+            </div>
+
+
+
+
+
+        </div>
+        <!-- RIGHT MENU END  -->
+
+    </div>
+
+    <!-- MAIN SECTION END  -->
+
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
